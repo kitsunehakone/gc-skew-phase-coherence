@@ -1,0 +1,6 @@
+order,organism,doric_assembly,sequence_accession,expected_length_bp,genus,doric_source_url
+1,Bacillus amyloliquefaciens IT-45,GCF_000242855.2,NC_020272.1,3928857,Bacillus,https://tubic.org/doric/browse/bacteria/GCF_000242855.2
+2,Pectobacterium parmentieri,GCF_000260925.1,NC_017845.1,5164411,Pectobacterium,https://tubic.org/doric/browse/bacteria/GCF_000260925.1
+3,Edwardsiella anguillarum ET080813,GCF_000264765.2,NZ_CP006664.1,4200387,Edwardsiella,https://tubic.org/doric/browse/bacteria/GCF_000264765.2
+4,Sphingobium indicum B90A,GCF_000264945.2,NZ_CP013070.1,3654322,Sphingobium,https://tubic.org/doric/browse/bacteria/GCF_000264945.2
+5,Pelosinus fermentans JBW45,GCF_000271665.2,NZ_CP010978.1,5380816,Pelosinus,https://tubic.org/doric/browse/bacteria/GCF_000271665.2

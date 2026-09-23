@@ -1,0 +1,16 @@
+order,organism,doric_assembly,sequence_accession,expected_length_bp,genus,doric_source_url
+1,Francisella tularensis subsp. holarctica OSU18,GCF_000011405.1,NC_017463.1,1895727,Francisella,https://tubic.org/doric/browse/bacteria/GCF_000011405.1
+2,Mycoplasma mycoides subsp. capri str. GM12,GCF_000023685.1,NZ_CP001668.1,1084586,Mycoplasma,https://tubic.org/doric/browse/bacteria/GCF_000023685.1
+3,Candidatus Endomicrobium trichonymphae,GCF_000146025.2,NC_020419.1,1125857,Endomicrobium,https://tubic.org/doric/browse/bacteria/GCF_000146025.2
+4,Streptococcus mitis NCTC 12261,GCF_000148585.2,NZ_CP028414.1,1868883,Streptococcus,https://tubic.org/doric/browse/bacteria/GCF_000148585.2
+5,Enterococcus casseliflavus EC20,GCF_000157355.2,NC_020995.1,3427276,Enterococcus,https://tubic.org/doric/browse/bacteria/GCF_000157355.2
+6,Prevotella sp. oral taxon 299 str. F0039,GCF_000163055.2,NC_022124.1,709850,Prevotella,https://tubic.org/doric/browse/bacteria/GCF_000163055.2
+7,Rhizobium sp. CIAT894,GCF_000172795.2,NZ_CP020947.1,4426159,Rhizobium,https://tubic.org/doric/browse/bacteria/GCF_000172795.2
+8,Acidithiobacillus caldus ATCC 51756,GCF_000175575.2,NZ_CP005986.1,2777717,Acidithiobacillus,https://tubic.org/doric/browse/bacteria/GCF_000175575.2
+9,Acinetobacter baumannii D1279779,GCF_000186665.3,NC_020547.2,3704284,Acinetobacter,https://tubic.org/doric/browse/bacteria/GCF_000186665.3
+10,Bordetella pertussis B1917,GCF_000193595.2,NZ_CP009751.1,4102186,Bordetella,https://tubic.org/doric/browse/bacteria/GCF_000193595.2
+11,Clostridioides difficile CF5,GCF_000210415.1,NC_017173.1,4159517,Clostridioides,https://tubic.org/doric/browse/bacteria/GCF_000210415.1
+12,Bifidobacterium breve UCC2003,GCF_000220135.1,NC_020517.1,2422684,Bifidobacterium,https://tubic.org/doric/browse/bacteria/GCF_000220135.1
+13,Thioalkalivibrio paradoxus ARh 1,GCF_000227685.2,NZ_CP007029.1,3756729,Thioalkalivibrio,https://tubic.org/doric/browse/bacteria/GCF_000227685.2
+14,Thermobacillus composti KWC4,GCF_000227705.2,NC_019897.1,4206343,Thermobacillus,https://tubic.org/doric/browse/bacteria/GCF_000227705.2
+15,Cytobacillus oceanisediminis 2691,GCF_000294775.2,NZ_CP015506.1,5461741,Cytobacillus,https://tubic.org/doric/browse/bacteria/GCF_000294775.2

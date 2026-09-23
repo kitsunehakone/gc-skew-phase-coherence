@@ -1,0 +1,2 @@
+n,null_replicates_per_genome,fisher_statistic,fisher_df,fisher_p,confirmatory_positive,raw_p_lt_0_05_n,raw_p_lt_0_05_fraction,wilson95_lo,wilson95_hi,BH_q_lt_0_05_n,resolution_stable_n,median_J_max,median_P1,median_higher_odd,median_C_odd
+15,4999,104.45632769223512,30,3.626589837004289e-10,True,6,0.4,0.1982449614134158,0.6425316987937539,6,10,0.6236296897179677,0.4967685133818528,0.2827378445371106,0.8858870733735291
