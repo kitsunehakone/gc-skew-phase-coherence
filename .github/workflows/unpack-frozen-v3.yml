@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "GC_Skew_Phase_Coherence_Repository_v3*.zip"
+      - "GC_Skew_Phase_Coherence_Repository_v3(1).zip"
       - ".github/workflows/unpack-frozen-v3.yml"
 
 permissions:
@@ -21,13 +21,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mapfile -t archives < <(find . -maxdepth 1 -type f -name 'GC_Skew_Phase_Coherence_Repository_v3*.zip' -printf '%f
-' | sort)
-          if [[ "${#archives[@]}" -ne 1 ]]; then
-            echo "Expected exactly one frozen v3 archive, found ${#archives[@]}: ${archives[*]-}"
-            exit 1
-          fi
-          archive="${archives[0]}"
+          archive='GC_Skew_Phase_Coherence_Repository_v3(1).zip'
+          test -f "$archive"
           tmp="$(mktemp -d)"
           unzip -q "$archive" -d "$tmp"
           src="$tmp/GC_Skew_Phase_Coherence_Repository_v3"
@@ -40,9 +35,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
           git commit -m "Publish exact frozen v3 reproducibility package"
           git push
