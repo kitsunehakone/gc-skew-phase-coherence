@@ -90,4 +90,8 @@ Software and repository materials are released under the MIT License; see `LICEN
 
 ## Citation
 
-A citation template is provided in `CITATION_TEMPLATE.cff`. Replace the author metadata, repository URL, and DOI after the archival release is minted.
+For the exact archived v1.0.0 release, cite:
+
+Carretero R. *Symmetry-resolved GC-skew phase coherence: analysis and reproducibility package*. Version 1.0.0. Zenodo. 2026. DOI: **10.5281/zenodo.22909311**.
+
+Repository-level concept DOI (all versions): **10.5281/zenodo.22909310**. The version-specific DOI above should be used when citing the exact archived release analyzed in the manuscript. See `CITATION.cff` and `ARCHIVAL_DOI.md`.
