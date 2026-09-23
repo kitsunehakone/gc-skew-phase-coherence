@@ -1,0 +1,24 @@
+{
+  "creators": [
+    {
+      "name": "Carretero, Roberto",
+      "orcid": "0009-0003-6115-7538",
+      "affiliation": "St. Thomas University, Miami Gardens, Florida, USA",
+      "type": "ProjectMember"
+    }
+  ],
+  "title": "Symmetry-resolved GC-skew phase coherence: analysis and reproducibility package",
+  "version": "1.0.0",
+  "access_right": "open",
+  "keywords": [
+    "GC skew",
+    "bacterial replication",
+    "Fourier analysis",
+    "symmetry projector",
+    "phase coherence",
+    "computational genomics"
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "language": "eng"
+}
