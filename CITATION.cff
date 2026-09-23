@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or analysis package, please cite it using the metadata below."
+title: "Symmetry-resolved GC-skew phase coherence: analysis and reproducibility package"
+type: software
+version: 1.0.0
+authors:
+  - family-names: "Carretero"
+    given-names: "Roberto"
+    email: "RobertoCarretero@STU.EDU"
+    affiliation: "St. Thomas University, Miami Gardens, Florida, USA"
+    orcid: "https://orcid.org/0009-0003-6115-7538"
+repository-code: "https://github.com/kitsunehakone/gc-skew-phase-coherence"
+license: MIT
+keywords:
+  - GC skew
+  - bacterial replication
+  - Fourier analysis
+  - symmetry projector
+  - phase coherence
+  - computational genomics
