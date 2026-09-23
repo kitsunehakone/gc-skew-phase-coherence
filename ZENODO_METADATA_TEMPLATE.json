@@ -1,0 +1,19 @@
+{
+  "title": "Symmetry-resolved GC-skew phase coherence: analysis and reproducibility package",
+  "upload_type": "software",
+  "description": "Frozen code, preregistration, accession manifests, provenance hashes, confirmatory result tables and figures for a symmetry-resolved analysis of higher-harmonic phase coherence in bacterial GC skew.",
+  "creators": [
+    {
+      "name": "REPLACE_WITH_AUTHOR_NAME"
+    }
+  ],
+  "keywords": [
+    "GC skew",
+    "bacterial replication",
+    "Fourier analysis",
+    "symmetry projector",
+    "phase coherence",
+    "computational genomics"
+  ],
+  "license": "MIT"
+}
