@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or analysis package, please cite the associated manuscript and archived release."
+title: "Symmetry-resolved GC-skew phase coherence: analysis and reproducibility package"
+type: software
+version: 1.0.0
+authors:
+  - family-names: "REPLACE"
+    given-names: "REPLACE"
+doi: "REPLACE_WITH_ZENODO_DOI"
+repository-code: "REPLACE_WITH_GITHUB_URL"
+license: MIT
