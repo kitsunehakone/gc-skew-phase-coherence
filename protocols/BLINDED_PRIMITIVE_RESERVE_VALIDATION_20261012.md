@@ -65,6 +65,13 @@ Per-genome one-sided Monte Carlo p-value:
 
 Minimum attainable p is 0.0002.
 
+### Deterministic Monte Carlo seeds
+Base seed = 20261012.
+For reserve row with 1-based frozen order r:
+- M=512 seed = 20261012 + 100003*r
+- M=256 seed = 20261012 + 100003*r + 256000003
+- M=1024 seed = 20261012 + 100003*r + 1024000003
+
 ## Primary cohort-level endpoint
 Combine the five per-genome p-values by Fisher's method:
 
