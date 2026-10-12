@@ -1,0 +1,30 @@
+name: Temporary primitive closure test
+
+on:
+  push:
+    branches:
+      - primitive-closure-test-20261012
+  workflow_dispatch:
+
+jobs:
+  primitive-closure-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numpy
+        run: python -m pip install --disable-pip-version-check numpy
+      - name: Run primitive closure test
+        run: python tools/primitive_closure_test.py
+      - name: Upload primitive closure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: primitive-closure-results
+          path: |
+            primitive_closure_results.csv
+            primitive_closure_summary.json
+          if-no-files-found: warn
