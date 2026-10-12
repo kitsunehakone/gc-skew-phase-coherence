@@ -1,0 +1,37 @@
+name: Blinded sound primitive closure
+
+on:
+  push:
+    branches:
+      - blinded-sound-closure-20261012
+  workflow_dispatch:
+
+jobs:
+  sound-closure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numpy
+        run: python -m pip install --disable-pip-version-check numpy
+      - name: Fetch frozen sound dataset
+        run: |
+          git clone https://github.com/Mak-Sim/Minsk2020_ALS_database.git /tmp/minsk2020
+          cd /tmp/minsk2020
+          git checkout 4fa0cfcde7c919e1b68c99fdecd83ff9ac7334de
+      - name: Run blinded sound validation
+        env:
+          SOUND_DATA_ROOT: /tmp/minsk2020
+        run: python tools/blinded_sound_primitive_closure.py
+      - name: Upload sound results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: blinded-sound-closure-results
+          path: |
+            sound_closure_results.csv
+            sound_closure_summary.json
+          if-no-files-found: warn
