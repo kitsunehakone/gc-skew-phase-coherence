@@ -1,0 +1,51 @@
+name: K4 harmonic ALS prospective test
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - blinded-k4-harmonic-als-20261012
+    paths:
+      - 'experiments/k4_harmonic_als_20261012/**'
+      - '.github/workflows/k4_harmonic_als_20261012.yml'
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout analysis branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy scipy
+
+      - name: Fetch frozen external source
+        run: |
+          rm -rf source
+          git init source
+          cd source
+          git remote add origin https://github.com/Mak-Sim/Minsk2020_ALS_database.git
+          git fetch --depth 1 origin 4fa0cfcde7c919e1b68c99fdecd83ff9ac7334de
+          git checkout --detach FETCH_HEAD
+          test "$(git rev-parse HEAD)" = "4fa0cfcde7c919e1b68c99fdecd83ff9ac7334de"
+
+      - name: Run frozen primary analysis
+        env:
+          MINSK_SOURCE: source
+        run: |
+          python experiments/k4_harmonic_als_20261012/analyze.py
+          cat results/k4_harmonic_als_a_results.txt
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: k4-harmonic-als-a-results
+          path: |
+            results/k4_harmonic_als_a_results.json
+            results/k4_harmonic_als_a_results.txt
+          if-no-files-found: error
